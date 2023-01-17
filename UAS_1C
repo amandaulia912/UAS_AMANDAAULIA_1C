@@ -1,0 +1,42 @@
+import java.util.ArrayList;
+
+public class Belanja {
+    public String getNamaBarang() {
+        return NamaBarang;
+    }
+
+    public void setNamaBarang(String namaBarang) {
+        NamaBarang = namaBarang;
+    }
+
+    public String getHargaBarang() {
+        return HargaBarang;
+    }
+
+    public void setHargaBarang(String hargaBarang) {
+        HargaBarang = hargaBarang;
+    }
+
+    public String getJumBelanja() {
+        return JumBelanja;
+    }
+
+    public void setJumBelanja(String jumBelanja){
+        JumBelanja = jumBelanja;
+    }
+
+    private String NamaBarang;
+    private String HargaBarang;
+    private String JumBelanja;
+
+    public Belanja(){
+    }
+    public Belanja(ArrayList<Belanja>a){
+        
+    }
+    public void CetakInvoice(){
+        System.out.println(getNamaBarang());
+        System.out.println(getHargaBarang());
+        System.out.println(getJumBelanja());
+    }
+}
